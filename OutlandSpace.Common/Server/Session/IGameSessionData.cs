@@ -8,17 +8,9 @@ public interface IGameSessionData
 
     int Turn { get; }
 
-    int Step { get; set; }
-
     bool IsPause { get; set; }
 
-    string ScenarioName { get; set; }
-
-    bool IsValid { get; set; }
-
-    DateTime LastUpdate { get; set; }
-
-    DateTime ExecuteTime { get; set; }
+    bool IsDebug { get; set; }
 
     List<ICelestialObject> GetCelestialObjects();
 }

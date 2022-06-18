@@ -29,13 +29,34 @@ namespace OutlandSpace.Client
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cmdStartNewGameSession = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // cmdStartNewGameSession
+            // 
+            this.cmdStartNewGameSession.Location = new System.Drawing.Point(35, 30);
+            this.cmdStartNewGameSession.Name = "cmdStartNewGameSession";
+            this.cmdStartNewGameSession.Size = new System.Drawing.Size(162, 23);
+            this.cmdStartNewGameSession.TabIndex = 0;
+            this.cmdStartNewGameSession.Text = "Start new game session";
+            this.cmdStartNewGameSession.UseVisualStyleBackColor = true;
+            this.cmdStartNewGameSession.Click += new System.EventHandler(this.cmdStartNewGameSession_Click);
+            // 
+            // ScreenMainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmdStartNewGameSession);
+            this.Name = "ScreenMainMenu";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button cmdStartNewGameSession;
     }
 }
 
