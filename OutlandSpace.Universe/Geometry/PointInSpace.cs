@@ -5,9 +5,9 @@ namespace OutlandSpace.Universe.Geometry
     [Serializable]
     public class PointInSpace
     {
-        public double X { get; set; }
+        public readonly double X;
 
-        public double Y { get; set; }
+        public readonly double Y;
         
         public PointInSpace(double x, double y)
         {
